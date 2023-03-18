@@ -1,2 +1,2 @@
-# ibm_quantum_computing
+# IBM quantum computing
 IBM bootcamp on quantum computing offered by IBM for 42
