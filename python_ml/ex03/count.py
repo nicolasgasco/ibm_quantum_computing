@@ -1,8 +1,9 @@
 import string
-
+import sys
 
 def text_analyzer(text=None):
     '''This function counts the number of upper characters, lower characters, punctuation and spaces in a given text.'''
+    
     if (text == None):
         text = input("Please input a string: ")
     try:
@@ -10,7 +11,7 @@ def text_analyzer(text=None):
     except:
         print(f"AssertionError: argument is not a string")
         return
-
+    
     upper = 0
     lower = 0
     punctuations = 0
@@ -31,3 +32,10 @@ def text_analyzer(text=None):
     print(f"- {lower} lower letter(s)")
     print(f"- {punctuations} punctuation mark(s)")
     print(f"- {spaces} space(s)")
+
+if __name__ == "__main__":
+    if (len(sys.argv) == 1 or len(sys.argv) > 2):
+        print("Error: provide 1 string argument.")
+        sys.exit(1)
+    
+    text_analyzer(sys.argv[1])
