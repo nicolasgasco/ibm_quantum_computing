@@ -1,0 +1,6 @@
+# Pip - How to
+- Show list of packages: `pip list`
+- Show metadata of `numpy`: `pip show numpy` 
+- Remove package: `pip uninstall numpy`
+- Re-install package: `pip install --force-reinstall numpy`
+- Freeze packages version in `requirements.txt` file: `pip freeze > requirements.txt`
